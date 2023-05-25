@@ -9,7 +9,7 @@ export default {
       center: true,
     },
     extend: {
-      fontFamily: ['Jost', 'sans-serif'],
+      fontFamily: {'Jost': ['Jost', 'sans-serif']},
       container: {
         padding: "1rem"
       }

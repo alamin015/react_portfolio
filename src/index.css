@@ -14,4 +14,12 @@
     box-shadow: 3px 3px 10px #3052af28;
     color: #fff;
   }
+  .btn:hover {
+    background: #103394;
+    color: #fafafa;
+  }
+}
+
+.active{
+  @apply text-base font-Jost font-medium text-[#3051AF];
 }
