@@ -3,6 +3,18 @@
 @tailwind utilities;
 
 @layer components {
+  .heading {
+    color: #1A1A1A;
+  }
+  .shape {
+    background: url('./assets/banner/shape2.png'),url('./assets/banner/shape3.png');
+    background-position:top right, top center;
+    background-repeat: no-repeat;
+  }
+  .banner-shape {
+    background: url('./assets/banner/shape1.png') no-repeat;
+    background-position: bottom right;
+  }
   .btn {
     background: #3051AF;
     border-radius: 50px;
