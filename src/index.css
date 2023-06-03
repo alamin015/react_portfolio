@@ -11,6 +11,9 @@
     background-position:bottom left, top left;
     background-repeat: no-repeat;
   }
+  .HeaderActive {
+    box-shadow: 3px 3px 13px #0c142c23;
+  }
   .banner-shape {
     background: url('./assets/banner/shape1.png'),url('./assets/banner/shape2.png'),url('./assets/banner/shape3.png');
     background-position: bottom right, top -20% right 6%, top 10% center;
@@ -43,6 +46,26 @@
   .myActive {
     border: 1px solid #3051AF;
     border-radius: 7px;
+  }
+
+  .mobileHeader {
+    position: absolute;
+    left: 0;
+    top: 80px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 3px 3px 13px #0000001e;
+    transform: translateY(100px);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+
+  .mobileHeader.menuActive {
+    transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.3s;
   }
 
 

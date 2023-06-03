@@ -1,11 +1,27 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import logo from "../../../assets/logo.png"
 import { NavLink } from 'react-router-dom';
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const Header = () => {
+  const [mobileMenu,setMobileMenu] = useState(false)
+  const [headerActive,setHeaderActive] = useState(false)
 
 
+useEffect(() => {
+  window.addEventListener("scroll",() => {
+    if(scrollY > 100){
+      setHeaderActive(true)
+    }else {
+      setHeaderActive(false)
+    }
+  })
+},[])
+
+
+const handleMenu = () => {
+  setMobileMenu(!mobileMenu)
+}
   const navOptions = <>
   <NavLink to="/" className={({isActive}) => isActive ? "active":"text-base font-Jost"}>Home</NavLink>
   <NavLink to="/what" className={({isActive}) => isActive ? "active":"text-base font-Jost"}>What i do</NavLink>
@@ -16,7 +32,7 @@ const Header = () => {
   </>
 
   return (
-    <header className='py-4 bg-white'>
+    <header className={`py-4 bg-white z-[9999] fixed top-0 left-0 w-full ${headerActive ? "HeaderActive":''}`}>
       <div className="container">
         <div className="flex items-center justify-between">
           <img src={logo} />
@@ -25,7 +41,21 @@ const Header = () => {
               navOptions
             }
           </ul>
-          <FaBars className='text-2xl cursor-pointer md:hidden' />
+          <div className='md:hidden' onClick={handleMenu}>
+          {
+            mobileMenu ? <FaTimes className='text-2xl cursor-pointer md:hidden' />:<FaBars className='text-2xl cursor-pointer md:hidden' />
+          }
+          </div>
+          
+        </div>
+      </div>
+      <div className={`mobileHeader ${mobileMenu ? "menuActive" : ''}`}>
+        <div className="container">
+          <ul className='flex flex-col gap-4 pt-2 pb-4'>
+            {
+              navOptions
+            }
+          </ul>
         </div>
       </div>
     </header>

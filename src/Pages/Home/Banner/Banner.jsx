@@ -5,7 +5,7 @@ import development from "../../../assets/lotti/development.json";
 
 const Banner = () => {
   return (
-    <div className='bg-[#FAFEFE] banner-shape'>
+    <div className='bg-[#FAFEFE] banner-shape mt-[80px]'>
         <div className="container py-8">
             <div className="sm:flex items-center justify-between">
                 <div className='sm:w-1/2 w-full'>
