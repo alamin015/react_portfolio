@@ -9,6 +9,9 @@ export default {
       center: true,
     },
     extend: {
+      colors: {
+        primary: "#1A1A1A"
+      },
       fontFamily: {'Jost': ['Jost', 'sans-serif']},
       container: {
         padding: "1rem"

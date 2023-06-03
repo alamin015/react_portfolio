@@ -1,0 +1,30 @@
+[
+    {
+        "id":1,
+        "img": "https://i.ibb.co/PwMtkNJ/image-11.png",
+        "title": "Research",
+        "desc": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters."
+    },
+    {
+        "id":2,
+        "img": "https://i.ibb.co/PwMtkNJ/image-11.png",
+        "title": "Product Design",
+        "desc": "Our team works hard to help you piece ideas together getting started on advertising aspect of the project you're working on. Whether it be for school, a charity organization, your personal business or company our slogans serve as a tool to help you get started."
+    },
+    {
+        "id":3,
+        "img": "https://i.ibb.co/PwMtkNJ/image-11.png",
+        "title": "Visual Design",
+        "desc": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters."
+    },
+    {
+        "id":4,
+        "img": "https://i.ibb.co/PwMtkNJ/image-11.png",
+        "title": "Development",
+        "desc": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters."
+    }
+]
+
+
+
+

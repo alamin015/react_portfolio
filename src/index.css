@@ -6,10 +6,10 @@
   .heading {
     color: #1A1A1A;
   }
-  .shape {
-    /* background: url('./assets/banner/shape2.png'),url('./assets/banner/shape3.png');
-    background-position:top right, top center;
-    background-repeat: no-repeat; */
+  .business {
+    background:linear-gradient(#d3d3d334,#c9c9c92c), url('./assets/business/top-shape.png'),url('./assets//business/bottom-shape.png');
+    background-position:bottom left, top left;
+    background-repeat: no-repeat;
   }
   .banner-shape {
     background: url('./assets/banner/shape1.png'),url('./assets/banner/shape2.png'),url('./assets/banner/shape3.png');
@@ -30,6 +30,18 @@
   .btn:hover {
     background: #103394;
     color: #fafafa;
+  }
+  .myBG {
+    background: #0C142C;
+    clip-path: polygon(0 0,100% 0,80% 100%, 20% 100%);
+  }
+  .onlyActive {
+    border: 1px solid transparent;
+    border-radius: 7px;
+  }
+  .myActive {
+    border: 1px solid #3051AF;
+    border-radius: 7px;
   }
 }
 

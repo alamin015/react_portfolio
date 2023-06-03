@@ -1,0 +1,30 @@
+[
+    {
+        "id":1,
+        "img": "https://i.ibb.co/mR9V04g/img1.png",
+        "title": "Research",
+        "desc": "Lorem Ipsum is simply dummy text of the printing"
+    },
+    {
+        "id":2,
+        "img": "https://i.ibb.co/b2pm84v/img2.png",
+        "title": "Product Design",
+        "desc": "Our team works hard to help you piece ideas together"
+    },
+    {
+        "id":3,
+        "img": "https://i.ibb.co/ZJLcDHT/img3.png",
+        "title": "Visual Design",
+        "desc": "Lorem Ipsum is simply dummy text of the printing"
+    },
+    {
+        "id":4,
+        "img": "https://i.ibb.co/RvkBRT2/img4.png",
+        "title": "Development",
+        "desc": "Lorem Ipsum is simply dummy text of the printing"
+    }
+]
+
+
+
+
