@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from "../../../assets/logo.png"
 import { NavLink } from 'react-router-dom';
+import { FaBars } from "react-icons/fa";
 
 const Header = () => {
 
@@ -19,11 +20,12 @@ const Header = () => {
       <div className="container">
         <div className="flex items-center justify-between">
           <img src={logo} />
-          <ul className='flex items-center gap-11'>
+          <ul className='hidden md:flex items-center gap-11'>
             {
               navOptions
             }
           </ul>
+          <FaBars className='text-2xl cursor-pointer md:hidden' />
         </div>
       </div>
     </header>

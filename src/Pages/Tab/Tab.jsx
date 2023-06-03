@@ -25,8 +25,8 @@ const Tab = () => {
   return (
     <div className='py-12'>
         <div className="container">
-            <div className="flex justify-between gap-8">
-                <div className='w-[500px] flex-shrink-0'>
+            <div className="md:flex justify-between gap-8">
+                <div className='max-w-[500px] w-full md:flex-shrink-0'>
                     {
                         menu.map(item => <SingleTabMenu myId={id} setId={setId} item={item} key={item.id} />)
                     }
